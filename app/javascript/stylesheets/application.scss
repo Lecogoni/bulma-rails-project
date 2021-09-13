@@ -1,2 +1,64 @@
-@import 'bulma/css/bulma.css'
+@import 'bulma/css/bulma.css';
 
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgba(255, 255, 255, 0.1), 0 0px 0 1px rgba(255, 255, 255, 0.02);
+  color: none;
+  max-width: 100%;
+  position: relative;
+}
+
+#container {
+  display: inline-block;
+  margin: 20px;
+  /*border: 1px solid black;*/
+  overflow: hidden;            /* clip the excess when child gets bigger than parent */
+}
+#container img {
+  display: block;
+  transition: transform .4s;   /* smoother zoom */
+}
+#container:hover img {
+  transform: scale(3);
+  transform-origin: 50% 50%;
+  overflow:scroll;
+}
+
+#img-wrapper {
+  position: relative;
+  overflow-x:auto;
+  overflow-y:auto;
+}
+
+#img-wrapper:hover img {
+  transform: scale(3);
+  transform-origin: 50% 50%;
+  overflow:scroll;
+  position: relative;
+  display: block;
+  position: relative;
+}
+
+/* horizontal scrolling on products#show */
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrolling-wrapper {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
