@@ -1,14 +1,102 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="container mt-6">
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <div class="tile is-ancestor">
+
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <figure class="image is-1by1">
+          <img alt="" src="https://www.bullpadel.com/5094-large_default/pala-bullpadel-hack-ctr-21.jpg">
+        </figure>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <figure class="image is-1by1">
+          <img alt="" src="https://www.bullpadel.com/5095-large_default/pala-bullpadel-hack-ctr-21.jpg">
+        </figure>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title"><strong><%= @product.name %></strong></p>
+        <div class="content">
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-8">
+    
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child box">
+            <figure class="image is-1by1">
+              <img alt="" src="https://www.bullpadel.com/5093-large_default/pala-bullpadel-hack-ctr-21.jpg">
+            </figure>
+          </article>
+          <article class="tile is-child box">
+            <p class="title">Vertical tiles</p>
+            <p class="subtitle">Bottom box</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <figure class="image is-1by1">
+              <img alt="" src="https://www.bullpadel.com/5096-large_default/pala-bullpadel-hack-ctr-21.jpg">
+            </figure>
+          </article>
+        </div>
+      </div>
+-      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">Wide column</p>
+          <p class="subtitle">Aligned with the right column</p>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <div class="content">
+          <div class="content is-size-4">
+              <%= @product.description %>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title">Side column</p>
+        <p class="subtitle">With some content</p>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        </div>
+      </article>
+    </div>
+    <div class="tile is-parent is-8">
+      <article class="tile is-child box">
+        <p class="title">Main column</p>
+        <p class="subtitle">With some content</p>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        </div>
+      </article>
+    </div>
+    
+  </div>
+
+
+</div>
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

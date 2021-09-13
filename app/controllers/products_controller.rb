@@ -6,11 +6,18 @@ class ProductsController < ApplicationController
     @products = Product.all
 
     @product_info = [
-      ["RAQUETTE BULLPADEL HACK 21", "https://www.bullpadel.com/5083-home_default/pala-bullpadel-hack-21.jpg"]
+      ["RAQUETTE BULLPADEL HACK 21", "https://www.bullpadel.com/5083-home_default/pala-bullpadel-hack-21.jpg"], 
+      ["RAQUETTE BULLPADEL HACK CTR 21", "https://www.bullpadel.com/5095-home_default/pala-bullpadel-hack-ctr-21.jpg"],
+      ["RAQUETTE BULLPADEL VERTEX 3 21", "https://www.bullpadel.com/5127-home_default/pala-bullpadel-vertex-3-21.jpg"], 
+      ["RAQUETTE BULLPADEL VERTEX 3 CTR 21", "https://www.bullpadel.com/5123-home_default/pala-bullpadel-vertex-3-ctr-21.jpg"],
+      ["RAQUETTE BULLPADEL VERTEX 3 COMFORT 21", "https://www.bullpadel.com/5119-home_default/pala-bullpadel-vertex-3-comfort-21.jpg"],
+      ["RAQUETTE BULLPADEL HACK 21", "https://www.bullpadel.com/5083-home_default/pala-bullpadel-hack-21.jpg"], 
+      ["RAQUETTE BULLPADEL HACK CTR 21", "https://www.bullpadel.com/5095-home_default/pala-bullpadel-hack-ctr-21.jpg"],
+      ["RAQUETTE BULLPADEL VERTEX 3 21", "https://www.bullpadel.com/5127-home_default/pala-bullpadel-vertex-3-21.jpg"], 
+      ["RAQUETTE BULLPADEL VERTEX 3 CTR 21", "https://www.bullpadel.com/5123-home_default/pala-bullpadel-vertex-3-ctr-21.jpg"],
+      ["RAQUETTE BULLPADEL VERTEX 3 COMFORT 21", "https://www.bullpadel.com/5119-home_default/pala-bullpadel-vertex-3-comfort-21.jpg"]
     ]
   end
-
-
 
   # GET /products/1 or /products/1.json
   def show
